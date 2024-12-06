@@ -5,3 +5,7 @@
 `sudo dnf install -y curl ipset dnsutils git jq` строчка для федоры
 
 `sudo apt install -y curl ipset dnsutils git jq` строчка для убунты
+
+`sudo pacman -S nftables` установка nftables
+### Установка самого запрета
+Скачать последний релиз .tar.gz с [тык](https://github.com/bol-van/zapret/releases)
