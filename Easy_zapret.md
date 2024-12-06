@@ -42,6 +42,6 @@ cd /home/layder/zapret-69.5
 ```
 Запускаем
 ```
-install_bin.sh
-install_prereq.sh
+./install_bin.sh
+./install_prereq.sh
 ```
