@@ -73,5 +73,6 @@ cd /home/layder/zapret-69.5
 6. `times to repeat each test` : `3`
 7. `your choice` : `standart` или ентер
 
-
 Ждёмс
+
+Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи и хорошо.
