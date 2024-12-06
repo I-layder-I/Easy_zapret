@@ -55,7 +55,11 @@ cd /home/layder/zapret-69.5
 ```
 В поле для адреса `domain(s) (default: rutracker.org) :` вписываем `youtube.com`:
 1.`ip protocol version(s)` - жмём `4` или ентер если `(default: 4)`;
+
 2.`check http` - `n`;
+
 3.`check https tls 1.2` - `y` или ентер;
+
 4.`check https tls 1.3` - `n`;
+
 Ждёмс
