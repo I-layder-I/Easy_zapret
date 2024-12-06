@@ -9,3 +9,13 @@
 `sudo pacman -S nftables` установка nftables
 ### Установка самого запрета
 Скачать последний релиз .tar.gz с [тык](https://github.com/bol-van/zapret/releases)
+
+Распаковываем
+
+Для этого понадобиться утилита tar и gzip
+
+`sudo pacman -S tar`
+
+`sudo pacman -S gzip`
+
+Далее `tar -xvzf zapret-v69.5.tar.gz -C /home`
