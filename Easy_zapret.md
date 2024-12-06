@@ -45,3 +45,5 @@ cd /home/layder/zapret-69.5
 ./install_bin.sh
 ./install_prereq.sh
 ```
+### Далее настройка блокчека
+Блокчек (`blockcheck`) - скрипт проверяющий и ищущий подходящую стратегию для обхода подробнее > [оригиналь](https://github.com/bol-van/zapret/tree/master)
