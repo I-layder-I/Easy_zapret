@@ -53,3 +53,6 @@ cd /home/layder/zapret-69.5
 ```
 ./blockcheck.sh
 ```
+В поле для адреса вписываем `youtube.com`
+
+Ждёмс
