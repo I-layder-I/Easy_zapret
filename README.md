@@ -40,4 +40,8 @@ tar -xvzf zapret-v69.5.tar.gz -C /home
 ```
 cd /home/layder/zapret-69.5
 ```
-запускаем ./
+Запускаем
+```
+install_bin.sh
+install_prereq.sh
+```
