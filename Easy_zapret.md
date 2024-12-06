@@ -64,14 +64,14 @@ cd /home/layder/zapret-69.5
 ```
 ./blockcheck.sh
 ```
-В поле для адреса `domain(s) (default: rutracker.org) :` вписываем `youtube.com`:
-1. `ip protocol version(s)` - жмём `4`
-2. `check http` - `n`
-3. `check https tls 1.2` - `y` или ентер
-4. `check https tls 1.3` - `n`
-5. `check http3 QUIC` - `n`
-6. `times to repeat each test` - `3`
-7. `your choice` - `standart` или ентер
+В поле для адреса `domain(s) (default: rutracker.org) :` вписываем `youtube.com`, далее в полях:
+1. `ip protocol version(s)` : жмём `4`
+2. `check http` : `n`
+3. `check https tls 1.2` : `y` или ентер
+4. `check https tls 1.3` : `n`
+5. `check http3 QUIC` : `n`
+6. `times to repeat each test` : `3`
+7. `your choice` : `standart` или ентер
 
 
 Ждёмс
