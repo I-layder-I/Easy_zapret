@@ -1,12 +1,22 @@
 # Самый простой гайд на zapret от bol-van для арчеводов
+### Все команды выполняем под
+```
+sudo -s
+```
+Иначе придётся перед каждой писать `sudo` (для выхода набрать `exit`)
+Также может убряться каталог пользователя то есть заместо `layder` в данном случае моё имя пользователя будет `~` и чтобы вернуться в домашнюю папку пишем
+```
+cd layder
+```
+`layder` заменить на ваше имя пользователь
 ## Установка зависимостей
-`sudo pacman -S --needed curl ipset bind git jq` строчка для арча и производных
+`pacman -S --needed curl ipset bind git jq` строчка для арча и производных
 
-`sudo dnf install -y curl ipset dnsutils git jq` строчка для федоры
+`dnf install -y curl ipset dnsutils git jq` строчка для федоры
 
-`sudo apt install -y curl ipset dnsutils git jq` строчка для убунты
+`apt install -y curl ipset dnsutils git jq` строчка для убунты
 
-`sudo pacman -S nftables` установка nftables
+`pacman -S nftables` установка nftables
 ### Установка самого запрета
 Скачать последний релиз .tar.gz с [тык](https://github.com/bol-van/zapret/releases)
 
@@ -15,7 +25,7 @@
 Для этого понадобиться утилита tar и gzip
 
 ```
-sudo pacman -S tar gzip
+pacman -S tar gzip
 ```
 
 Далее переходим в папку загрузки и распаковываем
