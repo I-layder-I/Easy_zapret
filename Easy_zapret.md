@@ -129,7 +129,7 @@ cd /home/layder/zapret-69.5
 ./install_easy.sh
 ```
 > [!NOTE]
-> Напоминаю, всё это выполняем под `sudo -s` и в `cd /home/layder/zapret-v69.5` илиже в вашем местонахождении папки с запретом.
+> Напоминаю, всё это выполняем под `sudo -s` и в `cd /home/layder/zapret-v69.5` или же в вашем местонахождении папки с запретом.
 1. ```
    easy install is supported only from default location : /opt/zapret
    currently its run from /home/layder/zapret-v69.5
@@ -152,10 +152,10 @@ cd /home/layder/zapret-69.5
 ```
 --filter-tcp=443 --dpi-desync=fake,fakedsplit --dpi-desync-fooling=badseq --dpi-desync-split-pos=midsld --dpi-desync-fake-tls=0x00000000 --hostlist=/opt/zapret/lists/googlevideo.txt --new
 ```
-1) `--filter-tcp=443` - параметр, для домохозяек - менять не потребуется
-2) `--dpi-desync=fake,fakedsplit --dpi-desync-fooling=badseq --dpi-desync-split-pos=midsld --dpi-desync-fake-tls=0x00000000` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
-3) `--hostlist=/opt/zapret/lists/googlevideo.txt` - об этом далее
-4) `--new` - пишется после каждой строчки, кроме последней, если же она одна, то параметр не пишется
+1. `--filter-tcp=443` - параметр, для домохозяек - менять не потребуется
+2. `--dpi-desync=fake,fakedsplit --dpi-desync-fooling=badseq --dpi-desync-split-pos=midsld --dpi-desync-fake-tls=0x00000000` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
+3. `--hostlist=/opt/zapret/lists/googlevideo.txt` - об этом далее
+4. `--new` - пишется после каждой строчки, кроме последней, если же она одна, то параметр не пишется
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
 вставляем
@@ -165,8 +165,8 @@ cd /home/layder/zapret-69.5
 и тот самый хост лист `--hostlist=/opt/zapret/lists/googlevideo.txt`.
 
 Тут поподробнее, это параметр, указывающий на то, к каким адресам будет применяться страта, рассмотрим:
-1) `--hostlist=` - сам параметр
-2) `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
+1. `--hostlist=` - сам параметр
+2. `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
 ##### Настройка `lists`
 Можем открыть новую вкладку в терминале или сделать перед этим.
 
