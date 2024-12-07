@@ -75,4 +75,4 @@ cd /home/layder/zapret-69.5
 
 Ждёмс
 
-Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи и хорошо.
+Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи, тоесть он не нужен.
