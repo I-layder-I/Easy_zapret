@@ -180,7 +180,7 @@ touch googlevideo.txt
 ![Пример_4](https://github.com/user-attachments/assets/a5ef3608-d1af-41df-b244-cdf6cb5ae228)
 И на этом настройка листа завершена
 
----
+--------
 
 
 
