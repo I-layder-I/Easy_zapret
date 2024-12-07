@@ -70,6 +70,8 @@ cd /home/layder/zapret-69.5
 6. В столбце `Name` выбираем любой пункт
 7. Копируем всё между `https://` и `/videoplayback?expire=1733589557&ei=1SVUZ4ebL6jM...`(может быть ещё дофигилион текста)
 8. Будет вида `rr4---sn-8ph2xajvh-n8vs.googlevideo.com`, у вас скорее всего другое
+![Пример](https://github.com/user-attachments/assets/20d6dec8-3db0-4847-96d8-cd4d26dcb59f)
+
 
 Запускаем
 ```
@@ -117,5 +119,4 @@ cd /home/layder/zapret-69.5
 ```
 ./install_easy.sh
 ```
-![2024-12-07_14-04](https://github.com/user-attachments/assets/319c133f-c957-4bfb-967b-dc9bb88a7caa)
 
