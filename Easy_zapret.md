@@ -21,7 +21,7 @@ sudo -s
 
 `apt install -y curl ipset dnsutils git jq` строчка для убунты
 
-`pacman -S nftables` установка nftables
+`pacman -S nftables` установка nftables(на арче)
 ### Установка самого запрета
 Скачать последний релиз .tar.gz с [тык](https://github.com/bol-van/zapret/releases)
 
