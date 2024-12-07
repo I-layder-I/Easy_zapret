@@ -122,7 +122,10 @@ cd /home/layder/zapret-69.5
 > [!NOTE]
 > Напоминаю, всё это выполняем под `sudo -s` и в `cd /home/layder/zapret-v69.5` илиже в вашем местонахождении папки с запретом.
 
+```
 easy install is supported only from default location : /opt/zapret
 currently its run from /home/layder/zapret-v69.5
 do you want the installer to copy it for you (default : N) (Y/N) ?
+```
+Тут вводим `y` и жмём ентер, если кратко то спрашивают хотим ли мы создать папку с запретом в директорию по умолчаанию то есть `/opt/zapret`
 
