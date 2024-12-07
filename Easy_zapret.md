@@ -163,6 +163,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 2) `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
 ##### Настройка `lists`
 Можем открыть новую вкладку в терминале или сделать перед этим.
+
 ![NOTE]
 > Не забывая в новой вкладке прописать `sudo -s` и ввести пароль
 
