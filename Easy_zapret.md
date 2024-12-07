@@ -117,3 +117,5 @@ cd /home/layder/zapret-69.5
 ```
 ./install_easy.sh
 ```
+![2024-12-07_14-04](https://github.com/user-attachments/assets/319c133f-c957-4bfb-967b-dc9bb88a7caa)
+
