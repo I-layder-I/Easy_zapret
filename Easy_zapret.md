@@ -164,7 +164,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 2. `--dpi-desync=fake,fakedsplit --dpi-desync-fooling=badseq --dpi-desync-split-pos=midsld --dpi-desync-fake-tls=0x00000000` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
 3. `--hostlist=/opt/zapret/lists/googlevideo.txt` - об этом далее
 4. `--new` - пишется после каждой строчки, кроме последней, если же она одна, то параметр не пишется
-5. 
+
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
 вставляем
