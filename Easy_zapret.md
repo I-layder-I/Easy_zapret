@@ -114,9 +114,15 @@ cd /home/layder/zapret-69.5
 > [!IMPORTANT]
 > Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи, тоесть он всё таки не нужен, пропускаем этот шаг.
 
-### Собственно установка
+## Собственно установка
 Пишем
 ```
 ./install_easy.sh
 ```
+> [!NOTE]
+> Напоминаю, всё это выполняем под `sudo -s` и в `cd /home/layder/zapret-v69.5` илиже в вашем местонахождении папки с запретом.
+
+easy install is supported only from default location : /opt/zapret
+currently its run from /home/layder/zapret-v69.5
+do you want the installer to copy it for you (default : N) (Y/N) ?
 
