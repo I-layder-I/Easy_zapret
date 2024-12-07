@@ -148,7 +148,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 
 6. `enable tpws transparent mode ?` - `n`
 
-7. `enable nfqws ?` тут наконец да - `y`
+7. `enable nfqws ?` тут наконец то да - `y`
 
 6. `do you want to edit the options` - `y`
 
