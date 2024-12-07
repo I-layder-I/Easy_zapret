@@ -167,12 +167,12 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
-вставляем
+Вставляем
 `--filter-tcp=443` пробел
 
-наша стратегия `--dpi-desync=split2` пробел,
+Наша стратегия `--dpi-desync=split2` пробел,
 
-и тот самый хост лист `--hostlist=/opt/zapret/lists/googlevideo.txt`.
+И тот самый хост лист `--hostlist=/opt/zapret/lists/googlevideo.txt`.
 
 Тут поподробнее, это параметр, указывающий на то, к каким адресам будет применяться страта, рассмотрим:
 1. `--hostlist=` - сам параметр
