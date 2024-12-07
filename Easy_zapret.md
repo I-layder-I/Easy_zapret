@@ -178,7 +178,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 - `--hostlist=` - сам параметр
 - `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
 ##### Настройка `lists`
-Открываем новую вкладку терминала.
+Открываем новую вкладку терминала
 
 > [!NOTE]
 > Не забывая в новой вкладке прописать `sudo -s` и ввести пароль)
