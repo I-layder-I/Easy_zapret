@@ -14,7 +14,7 @@ sudo -s
 > cd /home/layder
 > ```
 > `layder` заменить на ваше имя пользователья
-## Установка зависимостей
+### Установка зависимостей
 `pacman -S --needed curl ipset bind git jq` строчка для арча и производных
 
 `dnf install -y curl ipset dnsutils git jq` строчка для федоры
@@ -22,7 +22,7 @@ sudo -s
 `apt install -y curl ipset dnsutils git jq` строчка для убунты
 
 `pacman -S nftables` установка nftables(на арче)
-### Установка самого запрета
+## Установка самого запрета
 Скачать последний релиз .tar.gz с [тык](https://github.com/bol-van/zapret/releases)
 
 Распаковываем
