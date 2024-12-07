@@ -15,6 +15,7 @@ sudo -s
 > ```
 > `layder` заменить на ваше имя пользователья
 ### Установка зависимостей
+---
 `pacman -S --needed curl ipset bind git jq` строчка для арча и производных
 
 `dnf install -y curl ipset dnsutils git jq` строчка для федоры
