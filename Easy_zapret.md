@@ -76,5 +76,5 @@ cd /home/layder/zapret-69.5
 7. `your choice` : `standart` или ентер
 
 Ждёмс
-
-Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи, тоесть он не нужен.
+> [!IMPORTANT]
+> Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи, тоесть он не нужен.
