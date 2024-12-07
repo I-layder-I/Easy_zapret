@@ -65,16 +65,17 @@ cd /home/layder/zapret-69.5
 3. В открывшемся меню нажимаем `Инспектировать` или `Посмотреть код` или `Инструменты разработчика -> Инспектировать`
 4. Выбираем пункт `Network`
 > [!NOTE]
-> Если его нет расширяем открывшуюся консоль, потянув её в лево
+> Если его нет расширяем открывшуюся консоль, потянув её влево за край
 5. В строке `Filter` пишем `googlevideo`
 6. В столбце `Name` выбираем любой пункт
 7. Копируем всё между `https://` и `/videoplayback?expire=1733589557&ei=1SVUZ4ebL6jM...`(может быть ещё дофигилион текста)
 8. Будет вида `rr4---sn-8ph2xajvh-n8vs.googlevideo.com`, у вас скорее всего другое
+
 Запускаем
 ```
 ./blockcheck.sh
 ```
-В поле для адреса `domain(s) (default: rutracker.org) :` вписываем `youtube.com`, далее в полях:
+В поле для адреса `domain(s) (default: rutracker.org) :` вписываем наше `rr4---sn-8ph2xajvh-n8vs.googlevideo.com`, далее в полях:
 1. `ip protocol version(s)` : жмём `4`
 2. `check http` : `n`
 3. `check https tls 1.2` : `y` или ентер
@@ -83,16 +84,11 @@ cd /home/layder/zapret-69.5
 6. `times to repeat each test` : `3`
 7. `your choice` : `standart` или ентер
 
-Ждёмс
-> [!IMPORTANT]
-> Если же написало youtube.com Works without dpi или подобное то ютуб работает без дпи, тоесть он всё таки не нужен, пропускаем этот шаг.
-
 Далее берём соответственно нашу стратегию
 >* SUMMARY
->
->ipv4 youtube.com curl_test_https_tls12 : nfqws --dpi-desync=split2
+>ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2
 1. Где `ipv4` режим сети может также быть `ipv6` но нам надо именно `ipv4`
-2. `youtube.com` адрес, вписанный раннее
+2. `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` адрес, вписанный раннее
 3. `curl_test_https_tls12` режим проверки, выбранный до этого, их можетбыть несколько, нам нужен этот
 4. `nfqws` об этом далее
 5. И наконец сама стратегия(у вас скорее всего будет другая) `--dpi-desync=split2`
