@@ -123,10 +123,20 @@ cd /home/layder/zapret-69.5
 > [!NOTE]
 > Напоминаю, всё это выполняем под `sudo -s` и в `cd /home/layder/zapret-v69.5` илиже в вашем местонахождении папки с запретом.
 
+1.
 ```
 easy install is supported only from default location : /opt/zapret
 currently its run from /home/layder/zapret-v69.5
 do you want the installer to copy it for you (default : N) (Y/N) ?
 ```
-Тут вводим `y` и жмём ентер, если кратко то спрашивают хотим ли мы создать папку с запретом в директорию по умолчаанию, то есть `/opt/zapret`
+Тут вводим `y` и жмём ентер, если кратко то спрашивают хотим ли мы создать папку с запретом в директорию по умолчанию, то есть `/opt/zapret`
+2. `select firewall type :` тут `2` тобиш nftables
+3. `select firewall type :` - `n`
+4. `select flow offloading :` - может и не встретиться, тут `1` - none
+5. `enable tpws socks mode on port 987 ?` - `n`
+6. `enable tpws transparent mode ?` - `n`
+7. `enable nfqws ?` тут наконец да - `y`
+8. `do you want to edit the options` - `y`
 
+Откроется редактор кода в терминале, будет примерно так
+![Пример_2](https://github.com/user-attachments/assets/ae3c89b3-b2b5-433f-b841-a2ea86fd6fd0)
