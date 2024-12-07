@@ -169,6 +169,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
 вставляем
 `--filter-tcp=443` пробел
+
 наша стратегия `--dpi-desync=split2` пробел,
 
 и тот самый хост лист `--hostlist=/opt/zapret/lists/googlevideo.txt`.
