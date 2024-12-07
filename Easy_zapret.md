@@ -81,5 +81,10 @@ cd /home/layder/zapret-69.5
 Далее берём соответственно нашу стратегию
 >* SUMMARY
 >
->ipv4 rr2---sn-4gxxqvh-8v1s.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2  
->ipv4 rr2---sn-4gxxqvh-8v1s.googlevideo.com curl_test_http3 : nfqws -dpi-desync=fake,split2 —dpi-desync-ttl=3
+>ipv4 youtube.com curl_test_https_tls12 : nfqws --dpi-desync=split2
+1. Где `ipv4` режим сети может также быть `ipv6` но нам надо именно `ipv4`
+2. `youtube.com` адрес, вписанный раннее
+3. `curl_test_https_tls12` режим проверки, выбранный до этого, их можетбыть несколько, нам нужен этот
+4. `nfqws` об этом далее
+5. И наконец сама стратегия(у вас скорее всего будет другая) `--dpi-desync=split2`
+
