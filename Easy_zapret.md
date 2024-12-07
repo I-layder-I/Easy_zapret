@@ -175,8 +175,8 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 И тот самый хост лист `--hostlist=/opt/zapret/lists/googlevideo.txt`.
 
 Тут поподробнее, это параметр, указывающий на то, к каким адресам будет применяться страта, рассмотрим:
-1. `--hostlist=` - сам параметр
-2. `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
+- `--hostlist=` - сам параметр
+- `/opt/zapret/lists/googlevideo.txt` путь до файла с адресами
 ##### Настройка `lists`
 Можем открыть новую вкладку в терминале или сделать перед этим.
 
