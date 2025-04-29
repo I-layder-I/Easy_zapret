@@ -37,13 +37,13 @@ pacman -S tar gzip
 Далее переходим в папку загрузки и распаковываем
 ```
 cd Загрузки
-tar -xvzf zapret-v69.5.tar.gz -C /home
+tar -xvzf zapret-v69.5.tar.gz -C /home/Downloads
 ```
-Где `zapret-v69.5.tar.gz` имя архива, на данный момент оно такое и `/home/layder` - куда файл распаковывается
+Где `zapret-v69.5.tar.gz` имя архива, на данный момент оно такое и `/home/layder/Downloads` - куда файл распаковывается
 ## Сама программа
-Для начала переходим в папку с распакованной программой в моём случае это `/home/layder/zapret-v69.5`
+Для начала переходим в папку с распакованной программой в моём случае это `/home/layder/Downloads/zapret-v69.5`
 ```
-cd /home/layder/zapret-69.5
+cd /home/layder/Downloads/zapret-69.5
 ```
 Запускаем
 ```
