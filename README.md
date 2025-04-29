@@ -150,7 +150,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 Рассмотрим строчки:
 ```
 --filter-tcp=80 --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2 <HOSTLIST> --new
---filter-tcp=443 --dpi-desync=split2 --hostlist=/opt/zapret/lists/googlevideo.txt --new
+--filter-tcp=443 --dpi-desync=split2 <HOSTLIST>
 ```
 1. `--filter-tcp=80` - в этой строчке вставляем стратегию для `http`
 1. `--filter-tcp=443` - в этой строчке вставляем стратегию для `https`
@@ -161,11 +161,21 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
 Вставляем
-`--filter-tcp=443` пробел
+`--filter-tcp=80` 
+`--filter-tcp=443` пробел 
 
-Наша стратегия `--dpi-desync=split2` пробел
+Наша стратегия для `http` - `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` пробел
 
-Хост лист `<HOSTLIST>`.
+Хост лист `<HOSTLIST>`, не забываем `--new` в конце.
+
+Аналогично, но `--filter-tcp=80` заменяем на `--filter-tcp=443` и вставляем стратегию для `https`
+
+`--filter-tcp=443 --dpi-desync=split2 --hostlist=/opt/zapret/lists/googlevideo.txt`
+Должно получиться примерно вот так:
+```
+--filter-tcp=80 --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2 <HOSTLIST> --new
+--filter-tcp=443 --dpi-desync=split2 <HOSTLIST>
+```
 
 ##### Настройка `lists`
 
@@ -192,7 +202,6 @@ touch googlevideo.txt
 ![Пример_4](https://github.com/user-attachments/assets/a5ef3608-d1af-41df-b244-cdf6cb5ae228)
 И на этом настройка листа завершена
 
----
 Вместо `<HOSTLIST>` вставляем путь до нашего хостлиста `--hostlist=/opt/zapret/lists/googlevideo.txt`
 
 Если нужно провернуть действия с другими сайтами, например самим ютубом `youtube.com` то делаем аналогично, не забывая после каждой строчки кроме последней ставить `--new`
