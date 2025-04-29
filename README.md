@@ -86,16 +86,17 @@ cd /home/layder/Downloads/zapret-69.5
 ```
 В поле для адреса `domain(s) (default: rutracker.org) :` вписываем наше `rr4---sn-8ph2xajvh-n8vs.googlevideo.com`, далее в полях:
 1. `ip protocol version(s)` : жмём `4`
-2. `check http` : `n`
-3. `check https tls 1.2` : `y` или ентер
+2. `check http` : `y`
+3. `check https tls 1.2` : `y`
 4. `check https tls 1.3` : `n`
 5. `check http3 QUIC` : `n`
 6. `times to repeat each test` : `3`
-7. `your choice` : `standart` или ентер
+7. `your choice` : `standart`
 
 Далее берём соответственно нашу стратегию
 >* SUMMARY
->  
+>* 
+>ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_http : nfqws --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2
 1. Где `ipv4` режим сети, может также быть `ipv6`, но нам надо именно `ipv4`
 2. `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` адрес, вписанный раннее
