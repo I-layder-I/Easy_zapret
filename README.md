@@ -95,7 +95,7 @@ cd /home/layder/Downloads/zapret-69.5
 
 Далее берём соответственно нашу стратегию
 >* SUMMARY
->* 
+>
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_http : nfqws --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2
 1. Где `ipv4` режим сети, может также быть `ipv6`, но нам надо именно `ipv4`
