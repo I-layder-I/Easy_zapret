@@ -131,7 +131,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 
 2. `select firewall type :` тут `2` тобиш nftables
 
-3. `select firewall type :` - `n`
+3. `enable ipv6 support :` - `n`
   
 4. `select flow offloading :` - может и не встретиться, тут `1` - none
 
@@ -147,14 +147,16 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 ![Пример_2](https://github.com/user-attachments/assets/ae3c89b3-b2b5-433f-b841-a2ea86fd6fd0)
 Если в поле `NFQWS_OPT=""` в кавычках (для бибизян это `""`) будет что-то, то можете сразу удалять
 
-Рассмотрим строчку:
+Рассмотрим строчки:
 ```
---filter-tcp=443 --dpi-desync-fake-tls=0x00000000 --hostlist=/opt/zapret/lists/googlevideo.txt --new
+--filter-tcp=80 --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2 <HOSTLIST> --new
+--filter-tcp=443 --dpi-desync=split2 --hostlist=/opt/zapret/lists/googlevideo.txt --new
 ```
-1. `--filter-tcp=443` - параметр, для домохозяек - менять не потребуется
-2. `--dpi-desync=fake,fakedsplit --dpi-desync-fooling=badseq --dpi-desync-split-pos=midsld --dpi-desync-fake-tls=0x00000000` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
+1. `--filter-tcp=80` - в этой строчке вставляем стратегию для `http`
+1. `--filter-tcp=443` - в этой строчке вставляем стратегию для `https`
+2. `--dpi-desync=split2` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
 3. `--hostlist=/opt/zapret/lists/googlevideo.txt` - об этом далее
-4. `--new` - пишется после каждой строчки, кроме последней, если же она одна, то параметр не пишется
+4. `--new` - пишется после каждой строчки, кроме последней
 
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
