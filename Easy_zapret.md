@@ -102,8 +102,8 @@ cd /home/layder/Downloads/zapret-69.5
 1. Где `ipv4` режим сети
 2. `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` адрес, вписанный раннее
 3. `curl_test_http` и `curl_test_https_tls12` режимы проверки, выбранные до этого
-4. `nfqws` об этом далее
-5. И наконец сами стратегии(у вас скорее всего будут другие) `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` и `--dpi-desync=split2`
+4. `nfqws` это нам не надо
+5. И наконец сами стратегии(у вас будут другие) `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` и `--dpi-desync=split2`
 #### Если заблокирован сам сайт ютуба
 ---
 Лучше пропускать и идти к следующему шагу
@@ -155,14 +155,13 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 1. `--filter-tcp=80` - в этой строчке вставляем стратегию для `http`
 1. `--filter-tcp=443` - в этой строчке вставляем стратегию для `https`
 2. `--dpi-desync=split2` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
-3. `--hostlist=/opt/zapret/lists/googlevideo.txt` - об этом далее
+3. `<HOSTLIST>` - об этом далее
 4. `--new` - пишется после каждой строчки, кроме последней
 
 Итак в кавычки
 ![Пример_3](https://github.com/user-attachments/assets/5d454499-75e5-4491-8525-fe8326bbd8bf)
 Вставляем
-`--filter-tcp=80` 
-`--filter-tcp=443` пробел 
+`--filter-tcp=80` пробел 
 
 Наша стратегия для `http` - `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` пробел
 
@@ -199,6 +198,7 @@ touch googlevideo.txt
 ![Пример_4](https://github.com/user-attachments/assets/a5ef3608-d1af-41df-b244-cdf6cb5ae228)
 И на этом настройка листа завершена
 
+Создаем две строчки, для `http`  и `https` соответственно.
 Вместо `<HOSTLIST>` вставляем путь до нашего хостлиста `--hostlist=/opt/zapret/lists/googlevideo.txt`
 
 Если нужно провернуть действия с другими сайтами, например самим ютубом `youtube.com` то делаем аналогично, не забывая после каждой строчки кроме последней ставить `--new`
@@ -206,8 +206,8 @@ touch googlevideo.txt
 Если кавычки не закрыты закрываем их и выходим сохранив файл
 ## Продолжаем
 ```
-ctrl + x
-Сохранить изменённый буфер : - Просто жмём y
+ctrl + x (для закрытия редактора)
+Сохранить изменённый буфер : y
 Имя файла для записи: (путь до файла, обычно один) - ентер
 ```
 9. `do you want to edit the options ?` - повторный запрос после редактирования, на этот раз - `n`
