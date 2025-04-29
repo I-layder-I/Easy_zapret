@@ -106,20 +106,9 @@ cd /home/layder/Downloads/zapret-69.5
 5. И наконец сами стратегии(у вас скорее всего будут другие) `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` и `--dpi-desync=split2`
 #### Если заблокирован сам сайт ютуба
 ---
-Лучше пропускать и идти к следующему шагу, если же он не помог, то
+Лучше пропускать и идти к следующему шагу
 
-Запускаем
-```
-./blockcheck.sh
-```
-В поле для адреса `domain(s) (default: rutracker.org) :` вписываем `youtube.com`, далее в полях:
-1. `ip protocol version(s)` : жмём `4`
-2. `check http` : `n`
-3. `check https tls 1.2` : `y` или ентер
-4. `check https tls 1.3` : `n`
-5. `check http3 QUIC` : `n`
-6. `times to repeat each test` : `3`
-7. `your choice` : `standart` или ентер
+Скорее всего проверка по гуглвидео подойдет и для ютуба, но если же нет, то повторяем все вышеописанное, но `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` заменяем на `youtube.com`
 
 Ждёмс
 > [!IMPORTANT]
