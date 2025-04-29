@@ -202,6 +202,11 @@ touch googlevideo.txt
 Вместо `<HOSTLIST>` вставляем путь до нашего хостлиста `--hostlist=/opt/zapret/lists/googlevideo.txt`
 
 Если нужно провернуть действия с другими сайтами, например самим ютубом `youtube.com` то делаем аналогично, не забывая после каждой строчки кроме последней ставить `--new`
+Получаем примерно это:
+```
+--filter-tcp=80 --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2 --hostlist=/opt/zapret/lists/googlevideo.txt --new
+--filter-tcp=443 --dpi-desync=split2 --hostlist=/opt/zapret/lists/googlevideo.txt
+```
 
 Если кавычки не закрыты закрываем их и выходим сохранив файл
 ## Продолжаем
