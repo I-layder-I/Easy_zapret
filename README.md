@@ -97,12 +97,13 @@ cd /home/layder/Downloads/zapret-69.5
 >* SUMMARY
 >
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_http : nfqws --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2
+>
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2
-1. Где `ipv4` режим сети, может также быть `ipv6`, но нам надо именно `ipv4`
+1. Где `ipv4` режим сети
 2. `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` адрес, вписанный раннее
-3. `curl_test_https_tls12` режим проверки, выбранный до этого, их можетбыть несколько, нам нужен этот
+3. `curl_test_http` и `curl_test_https_tls12` режимы проверки, выбранные до этого
 4. `nfqws` об этом далее
-5. И наконец сама стратегия(у вас скорее всего будет другая) `--dpi-desync=split2`
+5. И наконец сами стратегии(у вас скорее всего будут другие) `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` и `--dpi-desync=split2`
 #### Если заблокирован сам сайт ютуба
 ---
 Лучше пропускать и идти к следующему шагу, если же он не помог, то
