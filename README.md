@@ -85,14 +85,14 @@ vim blockcheck.sh
 Далее берём соответственно нашу стратегию
 >* SUMMARY
 >
->ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_http : tpws --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2
+>ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_http : nfqws --dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2
 >
 >ipv4 rr4---sn-8ph2xajvh-n8vs.googlevideo.com curl_test_https_tls12 : nfqws --dpi-desync=split2
 1. Где `ipv4` режим сети
 2. `rr4---sn-8ph2xajvh-n8vs.googlevideo.com` адрес, вписанный раннее
 3. `curl_test_http` и `curl_test_https_tls12` режимы проверки, выбранные до этого
-4. `tpws` это стратегия для `http` или же `tcp=80`
-5. `nfqws` это стратегия для `https` или же `tcp=443`
+4. `http` это стратегия для `tcp=80`
+5. `https_tls12` это стратегия для `tcp=443`
 6. И наконец сами стратегии(у вас будут другие) `--dpi-desync=syndata,multisplit --dpi-desync-split-pos=method+2` и `--dpi-desync=split2`
 #### Если заблокирован сам сайт ютуба
 ---
@@ -143,7 +143,7 @@ do you want the installer to copy it for you (default : N) (Y/N) ?
 ```
 
 1. `--filter-tcp=80` - в этой строчке вставляем стратегию для `http`
-1. `--filter-tcp=443` - в этой строчке вставляем стратегию для `https`
+1. `--filter-tcp=443` - в этой строчке вставляем стратегию для `https_tls12`
 2. `--dpi-desync=split2` - сама наша стратегия, может быть и `--dpi-desync=fake,fakedsplit`. и `--dpi-desync-fake-tls=0x00000000`, и длиннее, и намного короче, в зависимости от сложности обхода
 3. `<HOSTLIST>` - об этом далее
 4. `--new` - пишется после каждой строчки, кроме последней
