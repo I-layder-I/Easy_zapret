@@ -300,9 +300,9 @@ cd ~/Downloads/zapret2-v0.9.5
 
 #### Как ускорить блокчек и найти максимум рабочих стратегий обхода
 
-1. Открываете `blockcheck.sh` в текстовом редакторе, у меня на арче Vim
+1. Открываете `blockcheck2.sh` в текстовом редакторе, у меня на арче Vim
 ```
-vim blockcheck.sh
+vim blockcheck2.sh
 ```
 2. В поиске(по кнопке `/`) ищете строчку вида `[ "$SCANLEVEL" = quick ] && break`
 3. Заменяете её на просто `break`
@@ -330,7 +330,7 @@ vim blockcheck.sh
 
 Запускаем
 ```
-./blockcheck.sh
+./blockcheck2.sh
 ```
 1. `select test` : `2`
 
